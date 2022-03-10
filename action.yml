@@ -19,6 +19,7 @@ runs:
     - name: Testing the Notice Workflow Command
       run: echo "::notice::Testing notice"
       shell: bash
-    - name: Testing the Debug Workflow Command
-      run: echo "::debug::Set the Octocat variable"
-      shell: bash
+    - name: Testing the Grouping log lines
+      run: echo "::group::My custom title"
+      run: echo "Inside group"
+      run: echo "::endgroup::"
