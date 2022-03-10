@@ -6,5 +6,16 @@ runs:
     - run: echo Hello there once!
       shell: bash
     - name: Testing the Error Workflow Command
-      run: echo "::error file=test_file.txt,line=1,col=1,endColumn=3::Testing error 1"
+      run: echo "::error::Testing error 1"
+      shell: bash
+    - run: echo Hello there
+      shell: bash
+    - name: Testing the Error Workflow Command
+      run: echo "::error::Testing error 2"
+      shell: bash
+    - name: Testing the Error Workflow Command
+      run: echo "::warning::Testing warning"
+      shell: bash
+    - name: Testing the Error Workflow Command
+      run: echo "::notice::Testing notice"
       shell: bash
