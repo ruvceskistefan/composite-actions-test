@@ -13,9 +13,12 @@ runs:
     - name: Testing the Error Workflow Command
       run: echo "::error::Testing error 2"
       shell: bash
-    - name: Testing the Error Workflow Command
+    - name: Testing the Warning Workflow Command
       run: echo "::warning::Testing warning"
       shell: bash
-    - name: Testing the Error Workflow Command
+    - name: Testing the Notice Workflow Command
       run: echo "::notice::Testing notice"
+      shell: bash
+    - name: Testing the Debug Workflow Command
+      run: echo "::debug::Set the Octocat variable"
       shell: bash
