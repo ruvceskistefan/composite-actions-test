@@ -6,15 +6,15 @@ runs:
     - run: echo Hello there once!
       shell: bash
     - name: Testing the Error Workflow Command
-      run: echo "::error::Testing error"
+      run: echo "::notice::Testing error 1"
       shell: bash
     - run: echo Hello there
       shell: bash
     - name: Testing the Error Workflow Command
-      run: echo "::error::Testing error"
+      run: echo "::notice::Testing error 2"
       shell: bash
     - name: Testing the Error Workflow Command
-      run: echo "::warning::Testing warning"
+      run: echo "::notice::Testing warning"
       shell: bash
     - name: Testing the Error Workflow Command
       run: echo "::notice::Testing notice"
