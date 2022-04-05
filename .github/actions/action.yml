@@ -1,0 +1,9 @@
+name: 'heyworld'
+description: 'Monitor the number of deploy previews currently deployed..'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Say hello
+      run: echo "hey world"
+      shell: bash
